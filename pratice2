@@ -4,4 +4,5 @@ System.setProperty("webdriver.chrome.driver","./driver/chromedriver.exe");
 		WebElement element = driver.findElement(By.id("username"));
 		System.out.println(element);
 		driver.findElement(By.id("username")).sendKeys("Abhi");
+		driver.close();
 		
