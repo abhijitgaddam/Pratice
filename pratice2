@@ -1,0 +1,7 @@
+System.setProperty("webdriver.chrome.driver","./driver/chromedriver.exe");
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("https://acttime.com/login.do");
+		WebElement element = driver.findElement(By.id("username"));
+		System.out.println(element);
+		driver.findElement(By.id("username")).sendKeys("Abhi");
+		
